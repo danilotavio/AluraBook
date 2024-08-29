@@ -1,0 +1,54 @@
+import url("styles/header.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --azul-degrade:linear-gradient (97.54 deg, #002F52 35.49%, #326589 165.37%);
+    --laranja: #EB9E00;
+    --fonte-principal:"poppins"
+}
+
+body {
+        background-color: var (--cor-de-fundo);
+    font-family: var (--fonte-principal);
+    font-size: 16 px;
+    font-weight: 400;
+}
+
+h1{
+    background-color: white;
+}
+@import url("styles/banner.css");
+.banner{
+background: var (--azul-degrade);
+color: var (--branco);
+text-align: center;
+padding: 2.5 em 2 em;
+}
+.banner__titulo{
+font-size: 16 px;
+font-weight: 700;
+}
+
+.banner__text{
+font-weight: 500;
+margin: 1 em 0;
+}
+.banner__pesquisa{
+background-color: transparent;
+border: 1 px solid var (--branco);
+color: var (--branco);
+border-radius: 24 px;
+padding: 1 em;
+width: 100%;
+}
+.banner__pesquisa::placeholder{
+font-family: var (--fonte-principal);
+font-size: 14 px;
+font-weight: 400;
+text-align: center;
+color: va r(--branco);
+background: url("../img/Lupa.svg")
+no-repeat;
+background-position: 1 em;
+}
